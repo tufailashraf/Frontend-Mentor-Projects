@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..600;1,100..600&display=swap');
+
+body {
+    margin: 100px auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.box-cont {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    overflow: hidden;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.box-cont .box {
+    font-family: 'Roboto Condensed', serif;
+    padding: 40px;
+    width: 250px;
+}
+
+.box-cont .box:nth-child(1) {
+    background-color: #e28525;
+}
+
+.box-cont .box:nth-child(2) {
+    background-color: #016972;
+}
+
+.box-cont .box:nth-child(3) {
+    background-color: #00403f;
+}
+
+.box-cont .box .img {
+    margin: 20px 0;
+}
+
+.box-cont .box h2 {
+    font-optical-sizing: auto;
+    font-size: 32px;
+}
+
+.box-cont .box p {
+    width: 200px;
+    line-height: 24px;
+    opacity: 0.8;
+}
+
+.box-cont .box .btn {
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 100px;
+    border: 1px solid transparent;
+    margin: 60px 0 30px;
+    font-weight: 600;
+}
+
+.box-cont .box:nth-child(1) .btn {
+    color: #e28525;
+}
+
+.box-cont .box:nth-child(2) .btn {
+    color: #016972;
+}
+
+.box-cont .box:nth-child(3) .btn {
+    color: #00403f;
+}
+
+.box-cont .box .btn:hover {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+@media screen and (max-width: 1024px) {
+    .box-cont .box {
+        width: 200px;
+        padding: 25px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        margin: 100px 0 !important;
+    }
+
+    .box-cont {
+        flex-flow: column nowrap;
+    }    
+
+    .box-cont .box {
+        width: 300px;
+        padding: 40px;
+    }
+
+    .box-cont .box p {
+        width: 230px;
+        word-spacing: 3px;
+    }
+
+    .box-cont .box .btn {
+        margin: 30px 0 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        margin: 50px auto;
+    }
+    .box-cont .box {
+        width: 240px;
+        padding: 50px;
+    }
+
+    .box-cont .box p {
+        width: 180px;
+        word-spacing: 2px;
+    }
+
+    .box-cont .box .btn {
+        margin: 30px 0 20px;
+    }
+    
+}
