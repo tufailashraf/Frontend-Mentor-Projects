@@ -1,7 +1,3 @@
-Here’s a structured and **attractive README** for your **Age Calculator** project:  
-
----
-
 # ⏳ Age Calculator  
 A **fully responsive** Age Calculator built using **HTML, CSS, and Vanilla JavaScript**. Enter your birth date, and this tool will instantly calculate your **exact age in years, months, and days**. The design is clean, interactive, and works seamlessly on **all screen sizes**.  
 
