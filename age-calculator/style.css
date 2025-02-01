@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('assets/fonts/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins-ExtraBold';
+    src: url('assets/fonts/Poppins-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins-ExtraBoldItalic';
+    src: url('assets/fonts/Poppins-ExtraBoldItalic.ttf') format('truetype');
+}
+
+
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    background-color: #fff;
+    width: 700px;
+    padding: 50px 50px 50px 10px;
+    border-radius: 20px 20px 150px;
+    position: relative;
+}
+
+.container form .input-data {
+    display: flex;
+}
+
+.container form .input-data div {
+    font-family: 'Poppins-Bold';
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0 20px 0 40px;
+}
+
+.container form .input-data div label {
+    padding-bottom: 6px;
+    color: #666;
+}
+
+.container form .input-data div input {
+    font-family: 'Poppins-ExtraBold';
+    width: 100px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 6px;
+    border: 2px solid #bbb;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.container form .input-data div input[type="number"] {
+    appearance: textfield;
+    -moz-appearance: textfield; /* for firefox */
+}
+
+.container form .input-data div input[type="number"]::-webkit-outer-spin-button,
+.container form .input-data div input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.container form .input-data div input:focus {
+    outline-color: #864cff;
+}
+
+.container form .hr {
+    overflow: hidden;
+    width: 600px;
+    border: 1px solid #bbb;
+    margin: 60px 50px 40px 40px;
+}
+
+.container form .age {
+    font-family: 'Poppins-ExtraBoldItalic', serif;
+    padding: 0 40px;
+    font-size: 72px;
+    line-height: 80px;
+}
+
+.container form .age span {
+    color: #864cff;
+}
+
+.container form .btn {
+    background-color: #864cff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    border: none;
+    border-radius: 50px;
+    position: absolute;
+    top: 160px;
+    right: 50px;
+    cursor: pointer;
+}
+
+.container .btn:hover {
+    box-shadow: 0 0 20px #864cff;
+}
+
+.container .btn:active {
+    background-color: #000;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 500px;
+        padding: 30px 30px 30px 10px;
+    }
+
+    .container form .input-data div {
+        margin: 0 20px;
+    }
+
+    .container form .input-data div label {
+        font-size: 15px;
+    }
+
+    .container form .input-data div input {
+        width: 70px;
+        font-size: 18px;
+        padding: 12px;
+    }
+    
+    .container form .hr {
+        width: 450px;
+        margin: 50px 20px;
+    }
+
+    .container form .age {
+        padding: 0 20px;
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .container form .btn {
+        width: 80px;
+        height: 80px;
+        top: 123.5px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .container {
+        width: 340px;
+        padding: 20px 20px 20px 10px;
+    }
+
+    .container form .input-data div {
+        margin: 0 5px;
+    }
+
+    .container form .input-data label {
+        font-size: 12px;
+    }
+
+    .container form .input-data input {
+        width: 40px;
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    .container form .hr {
+        width: 310px;
+        margin: 40px 10px;
+    }
+
+    .container form .age {
+        padding: 0 10px;
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .container form .btn {
+        width: 50px;
+        height: 50px;
+        top: 119px;
+        left: 300px;
+    }
+
+    .container form .btn img {
+        width: 30px;
+    }
+}
