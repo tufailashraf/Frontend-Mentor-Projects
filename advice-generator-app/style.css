@@ -1,0 +1,115 @@
+body {
+    background-color: #202632;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-family: monospace;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    background-color: #313a49;
+    width: 500px;
+    text-align: center;
+    align-items: center;
+    margin: 100px 50px;
+    padding: 50px 10px;
+    position: relative;
+    border-radius: 18px;
+}
+
+.container .advice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.container .advice .advice-id {
+    color: #50eea2;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+.container .advice p {
+    margin: 30px auto;
+    color: #cee2e9;
+    font-size: 24px;
+    font-weight: 600;
+    width: 85%;
+}
+
+.container .divider {
+    background: url(images/pattern-divider-desktop.svg) no-repeat center;
+    padding: 25px 0 0;
+}
+
+.container .btn {
+    background-color: #53ffab;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50px; /* 50px and 100% both gives circle */
+    position: absolute;
+    bottom: -30px;
+    left: 230px;
+    cursor: pointer;
+}
+
+.container .btn:hover {
+    box-shadow: 0 0 20px #53ffab;
+}
+
+.container .btn:active {
+    box-shadow: 0 0 10px #53ffab;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 400px;
+        margin: 0;
+    }
+    
+    .container .btn {
+        left: 180px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 320px;
+        padding: 30px 0;
+    }
+
+    .container .advice .advice-id {
+        font-size: 16px;
+    }
+
+    .container .advice p {
+        margin: 15px 0;
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .container .divider {
+        background: url(images/pattern-divider-mobile.svg) no-repeat center;
+        padding: 25px 0 0;
+    }
+
+    .container .btn {
+        left: 135.5px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .container .btn img {
+        width: 25px;
+        height: 25px;
+    }
+}
