@@ -1,0 +1,308 @@
+body {
+    background-color: #edf2f8;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 12px;
+    width: 800px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.img {
+    flex: 40%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 12px 0 0 12px;
+}
+
+.img img {
+    width: 100%;
+    height: inherit;
+}
+
+.content {
+    padding: 40px 50px;
+    color: #49556b;
+    flex: 50%;
+}
+
+.intro {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+p {
+    font-weight: 500;
+    color: #6E8098;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.user img {
+    width: 50px;
+    border-radius: 50px;
+}
+
+.username {
+    flex-grow: 1;
+    margin-left: 15px;
+}
+
+.share {
+    width: 40px;
+    height: 40px;
+    background-color: #eef3f8;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.share svg {
+    fill: #6E8098;
+    transition: fill 0.3s, background-color 0.3s;
+    width: 15px;
+    height: 15px;
+}
+
+.share:hover {
+    background-color: #6E8098;
+    svg {
+        fill: #fff;
+    }
+}
+
+
+.share-popup {
+    position: absolute;
+    bottom: 105px;
+    right: -42px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s, opacity 0.3s;
+}
+
+.share-popup.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.share-icons {
+    background-color: #49556b;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+    width: 200px;
+    border-radius: 12px;
+    z-index: 1;
+}
+
+.share-arrow-div {
+    width: 30px;
+    height: 30px;
+    background-color: #49556b;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 35px;
+    right: 95px;
+}
+
+.share-icons span {
+    color: #ccc;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+.share-icons a {
+    line-height: 0;
+}
+
+.share-icons img {
+    width: 25px;
+    cursor: pointer;
+}
+
+.share-icons button {
+    display: none;
+    background-color: #6E8098;
+}
+
+.share-icons button svg {
+    fill: #fff;
+    width: 15px;
+    height: 15px;
+}
+
+.share-icons button:hover {
+    background-color: #fff;
+    svg {
+        fill: #6E8098;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        width: 600px;
+        height: 280px;
+    }
+
+    .content {
+        padding: 40px;
+    }
+
+    .intro {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .user {
+        margin-top: 10px;
+    }
+
+    .user img {
+        width: 40px;
+    }
+
+    .username span.date {
+        font-size: 14px;
+    }
+
+    .share,
+    .share-icons .share {
+        width: 35px;
+        height: 35px;
+    }
+
+    .share-popup {
+        bottom: 85px;
+        right: -50px;
+    }
+    
+    .share-icons {
+        padding: 12px;
+    }
+
+    .share-icons img {
+        width: 18px;
+    }
+
+    .share-arrow-div {
+        width: 25px;
+        height: 25px;
+        top: 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 380px;
+        flex-flow: column nowrap;
+        height: auto;
+    }
+    
+    .img {
+        height: 300px;
+        width: 100%;
+        flex: none;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .content {
+        padding: 25px 40px 0;
+    }
+
+    p {
+        margin: 10px 0;
+    }
+
+    .user {
+        padding: 15px 0 20px;
+        margin: 0;
+    }
+    
+    .username {
+        font-size: 14px;
+    }
+
+    .share-popup {
+        width: 380px;
+        flex: 100%;
+        bottom: 0;
+        right: 0;
+    }
+    
+    .share-icons {
+        width: 100%;
+        border-radius: 0 0 12px 12px;
+        padding: 21px 0;
+    }
+
+    .share-icons span {
+        font-size: 18px;
+    }
+
+    .share-icons img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .share-icons button {
+        display: inline;
+        margin: 0 6.8px 0 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 300px;
+    }
+
+    .img {
+        height: 220px;
+    }
+
+    .content {
+        padding: 15px 25px 0;
+    }
+
+    .user {
+        padding: 10px 0 15px;
+    }
+
+    .share-popup {
+        width: 300px;
+    }
+
+    .share-icons {
+        padding: 15.8px 0;
+    }
+
+    .share-icons button {
+        margin: 0 5px 0 12px;
+    }
+}
