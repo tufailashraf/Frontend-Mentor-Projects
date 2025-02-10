@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0 auto;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 1000px;
+    box-shadow: 0 0 5px #aaa;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .content {
+    background-image: url('images/bg-pattern-desktop.svg');
+    background-position: center;
+    width: 550px;
+    padding: 0 80px;
+}
+
+.content .logo {
+    width: 150px;
+    margin: 40px 0 70px;
+}
+.content .logo img {
+    width: 100%;
+}
+
+.content .coming-soon {
+    text-transform: uppercase;
+    font-size: 48px;
+    letter-spacing: 8px;
+}
+
+.container .content p {
+    color: #f29e9e;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.content form {
+    position: relative;
+    margin: 30px 0 80px;
+}
+
+.content form input,
+.content form button {
+    border-radius: 40px;
+}
+.content form input {
+    border: 2px solid #f29e9e;
+    width: 300px;
+    font-size: 16px;
+    padding: 15px 50px 15px 20px;
+}
+
+.content form input::placeholder {
+    color: #f29e9e;
+}
+
+.content form input:focus {
+    outline: 2px solid #f29e9e;
+    outline: none;
+}
+
+.content form button {
+    background-color: #f29e9e;
+    border: 2px solid #f29e9e;
+    width: 90px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 50px;
+
+    img {
+        padding: 12px;
+    }
+}
+
+.content form button:active {
+    background-color: #fec3c3;
+    border: 2px solid #eec7c7;
+    box-shadow: 0 0 6px #f29e9e;
+    
+}
+
+.container .img {
+    width: 420px;
+}
+.container .img img {
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 600px;
+    }
+    
+    .container .content {
+        width: 400px;
+        padding: 0 35px;
+    }
+
+    .content .logo {
+        width: 100px;
+        margin: 30px 0 30px;
+    }
+
+    .content .coming-soon {
+        font-size: 28px;
+    }
+
+    .container .content p {
+        line-height: 20px;
+    }
+
+    .content form {
+        margin: 20px 0 40px;
+    }
+
+    .content form input {
+        width: 200px;
+        font-size: 14px;
+        padding: 10px 55px 10px 12px;
+    }
+
+    .content form button {
+        width: 70px;
+        right: 20px;
+        img {
+            padding: 5.5px;
+        }
+    }
+
+    .container .img {
+        width: 400px;
+    }
+
+}
+
+@media screen and (max-width:624px) {
+    .container {
+        width: 400px;
+        flex-flow: column nowrap;
+        flex-direction: column-reverse;
+        padding: 80px 0 0;
+        position: relative;
+    }
+    
+    .content .logo {
+        position: absolute;
+        top: 0;
+        width: 120px;
+    }
+
+    .content .coming-soon {
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .container .content {
+        width: 100%;
+    }
+
+    .content p {
+        text-align: center;
+    }
+
+    .content form {
+        margin: 20px auto;
+        text-align: center;
+    }
+    .content form input {
+        width: 250px;
+    }
+    .content form button {
+        right: 41px;
+    }
+
+    .container .img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 300px;
+        padding: 60px 0 20px;
+    }
+
+    .content .logo {
+        width: 100px;
+        margin: 20px auto;
+    }
+
+    .content .coming-soon {
+        font-size: 24px;
+        margin: 15px auto;
+    }
+
+    .content form input {
+        width: 200px;
+        font-size: 12px;
+        padding: 10px 45px 10px 12px;
+    }
+
+    .content form button {
+        width: 60px;
+        right: 15px;
+        img {
+            padding: 4.5px;
+        }
+    }
+}
