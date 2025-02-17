@@ -7,4 +7,4 @@ This is a fully responsive 3-Column Preview Card Component built using HTML and 
 #### ✔️ Modern flexbox-based layout
 #### ✔️ Pixel-perfect design matching the Frontend Mentor challenge
 
-### 🔗 <a href="https://raw.githack.com/tufailashraf/Frontend-Mentor-Projects/main/3-column-preview-card-component/index.html" target="_blank">Live Preview</a>
+### 🔗 <a href="https://3-column-preview-card-component-wine-tau.vercel.app/" target="_blank">Live Preview</a>
