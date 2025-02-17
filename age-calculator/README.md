@@ -7,4 +7,4 @@ A **fully responsive** Age Calculator built using **HTML, CSS, and Vanilla JavaS
 #### ✔️ Interactive UI with smooth **JavaScript validations and animations**  
 #### ✔️ Built with **Vanilla JavaScript**, no frameworks required  
 
-### 🔗 <a href="https://raw.githack.com/tufailashraf/Frontend-Mentor-Projects/main/age-calculator/index.html" target="_blank">Live Preview</a>
+### 🔗 <a href="https://age-calculator-jade-pi.vercel.app/" target="_blank">Live Preview</a>
