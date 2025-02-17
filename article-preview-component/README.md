@@ -7,4 +7,4 @@ A **fully responsive** Article Preview Component built using **HTML, pure CSS, a
 #### ✔️ Smooth animations for an enhanced user experience  
 #### ✔️ Built with **Vanilla JavaScript**, no external libraries  
 
-### 🔗 <a href="https://raw.githack.com/tufailashraf/Frontend-Mentor-Projects/main/article-preview-component/index.html" target="_blank">Live Preview</a>
+### 🔗 <a href="https://article-preview-component-kappa-six.vercel.app/" target="_blank">Live Preview</a>
