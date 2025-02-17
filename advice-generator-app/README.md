@@ -6,4 +6,4 @@ This is a fully responsive Advice Generator built using HTML, CSS, and JavaScrip
 #### ✔️ Fully responsive design with CSS media queries
 #### ✔️ Interactive and engaging UI with smooth animations
 #### ✔️ Built using HTML, CSS, and JavaScript
-### 🔗 <a href="https://raw.githack.com/tufailashraf/Frontend-Mentor-Projects/main/advice-generator-app/index.html" target="_blank">Live Preview</a>
+### 🔗 <a href="https://advice-generator-app-two-chi.vercel.app/" target="_blank">Live Preview</a>
