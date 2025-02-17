@@ -7,4 +7,4 @@ A **fully responsive** Coming Soon Card built using **HTML, pure CSS, and JavaSc
 #### ✔️ **Email validation** using Vanilla JavaScript  
 #### ✔️ Smooth hover and focus effects for enhanced UX  
 
-### 🔗 <a href="https://raw.githack.com/tufailashraf/Frontend-Mentor-Projects/main/base-apparel-coming-soon-card/index.html" target="_blank">Live Preview</a>
+### 🔗 <a href="https://base-apparel-coming-soon-card.vercel.app/" target="_blank">Live Preview</a>
