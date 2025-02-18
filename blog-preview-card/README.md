@@ -7,4 +7,4 @@ This is a fully responsive **Blog Preview Card** built using **HTML** and **pure
 #### ✔️ Modern and accessible design
 #### ✔️ Pixel-perfect implementation with smooth adaptability
 
-### 🔗 <a href="https://blog-preview-card-gamma-five.vercel.app/" target="_blank">Live Preview</a>
+### 🔗 <a href="https://blog-preview-card-murex-zeta.vercel.app/" target="_blank">Live Preview</a>
