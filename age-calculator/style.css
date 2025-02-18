@@ -1,19 +1,6 @@
-@font-face {
-    font-family: 'Poppins-Bold';
-    src: url('assets/fonts/Poppins-Bold.ttf') format('truetype');
+*{
+    font-family: 'Poppins', sans-serif;
 }
-
-@font-face {
-    font-family: 'Poppins-ExtraBold';
-    src: url('assets/fonts/Poppins-ExtraBold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Poppins-ExtraBoldItalic';
-    src: url('assets/fonts/Poppins-ExtraBoldItalic.ttf') format('truetype');
-}
-
-
 body {
     background-color: #f0f0f0;
     display: flex;
@@ -37,7 +24,7 @@ body {
 }
 
 .container form .input-data div {
-    font-family: 'Poppins-Bold';
+    font-weight: 700;
     display: flex;
     flex-flow: column nowrap;
     margin: 0 20px 0 40px;
@@ -49,10 +36,9 @@ body {
 }
 
 .container form .input-data div input {
-    font-family: 'Poppins-ExtraBold';
+    font-weight: 800;
     width: 100px;
     font-size: 24px;
-    font-weight: bold;
     border-radius: 6px;
     border: 2px solid #bbb;
     padding: 12px;
@@ -61,7 +47,7 @@ body {
 
 .container form .input-data div input[type="number"] {
     appearance: textfield;
-    -moz-appearance: textfield; /* for firefox */
+    -moz-appearance: textfield;
 }
 
 .container form .input-data div input[type="number"]::-webkit-outer-spin-button,
@@ -82,7 +68,8 @@ body {
 }
 
 .container form .age {
-    font-family: 'Poppins-ExtraBoldItalic', serif;
+    font-style: italic;
+    font-weight: 800;
     padding: 0 40px;
     font-size: 72px;
     line-height: 80px;
