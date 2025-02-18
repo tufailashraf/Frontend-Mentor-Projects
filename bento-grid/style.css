@@ -1,16 +1,5 @@
-@font-face {
-    font-family: 'DMSans-Medium';
-    src: url('assets/fonts/DMSans-Medium.ttf');
-}
-
-@font-face {
-    font-family: 'DMSans-MediumItalic';
-    src: url('assets/fonts/DMSans-MediumItalic.ttf');
-}
-
-@font-face {
-    font-family: 'DMSans-Regular';
-    src: url('assets/fonts/DMSans-Regular.ttf');
+* {
+    font-family: 'DM Sans', sans-serif;
 }
 
 body {
@@ -61,10 +50,10 @@ body {
 .container .one {
     grid-area: one;
     background-color: hsl(31, 66%, 93%);
-    font-family: 'DMSans-Medium', Arial, serif;
+    font-weight: 500;
     font-size: 32px;
     line-height: 35px;
-    letter-spacing: -3px;
+    letter-spacing: -2px;
 }
 
 .container .one div {
@@ -72,7 +61,8 @@ body {
 }
 
 .container .one div span {
-    font-family: 'DMSans-MediumItalic', Arial, serif;
+    font-weight: 500;
+    font-style: italic;
 }
 
 /* CONTAINER TWO */
@@ -85,7 +75,7 @@ body {
 }
 
 .two div:nth-child(1) {
-    font-family: 'DMSans-Medium', Arial, serif;
+    font-weight: 500;
     font-size: 42px;
 }
 
@@ -95,7 +85,7 @@ body {
 }
 
 .two div:nth-child(3) {
-    font-family: 'DMSans-Regular', Arial, serif;
+    font-weight: 400;
 }
 
 /* CONTAINER THREE */
@@ -107,7 +97,7 @@ body {
 }
 
 .three div:nth-child(1) {
-    font-family: 'DMSans-Medium', Arial, serif;
+    font-weight: 500;
     font-size: 28px;
     line-height: 32px;
     letter-spacing: -2px;
@@ -120,14 +110,14 @@ body {
 }
 
 .three div:nth-child(3) {
-    font-family: 'DMSans-Medium', Arial, serif;
+    font-weight: 500;
 }
 
-/* CONAINER FOUR */
+/* CONTAINER FOUR */
 .container .four {
     grid-area: four;
     background-color: #fff;
-    font-family: 'DMSans-Regular', Arial, serif;
+    font-weight: 400;
     font-size: 28px;
     font-weight: 600;
     letter-spacing: -1px;
@@ -145,7 +135,7 @@ body {
     grid-area: five;
     background-color: hsl(39, 100%, 71%);
     justify-content: space-between;
-    font-family: 'DMSans-Medium', Arial, serif;
+    font-weight: 500;
     font-size: 24px;
     line-height: 21px;
     padding-top: 30px;
@@ -160,14 +150,13 @@ body {
     bottom: -65px;
 }
 
-
 /* CONTAINER SIX */
 .container .six {
     grid-area: six;
     background-color: hsl(39, 100%, 71%);
     justify-content: space-between;
     align-items: flex-start;
-    font-family: 'DMSans-Medium', Arial, serif;
+    font-weight: 500;
     font-size: 24px;
     line-height: 28px;
     letter-spacing: -2px;
@@ -185,7 +174,7 @@ body {
 .container .seven {
     grid-area: seven;
     background-color: hsl(0, 0%, 100%);
-    font-family: 'DMSans-Medium', Arial, serif;
+    font-weight: 500;
     text-align: center;
 }
 
@@ -206,7 +195,7 @@ body {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    font-family: 'DMSans-Medium', Arial, serif;
+    font-weight: 500;
     color: #fff;
     font-size: 28px;
 }
@@ -220,6 +209,7 @@ body {
     padding: 0 10px;
 }
 
+/* Responsive Styling */
 @media screen and (max-width: 1024px) {
     .container {
         gap: 10px;
@@ -233,16 +223,15 @@ body {
 
     .container .one {
         font-size: 24px;
-        letter-spacing: -2px;
         line-height: 25px;
+    }
 
-        div:nth-child(1) {
-            padding: 10px;
-        }
+    .container .one div:nth-child(1) {
+        padding: 10px;
+    }
 
-        .img {
-            width: 130px;
-        }
+    .container .one .img {
+        width: 130px;
     }
 
     .container .two {
@@ -271,10 +260,10 @@ body {
 
     .container .four {
         font-size: 24px;
+    }
 
-        .img {
-            width: 160px;
-        }
+    .four .img {
+        width: 160px;
     }
 
     .five .img {
@@ -304,19 +293,17 @@ body {
     .container {
         grid-template-columns: repeat(3, 150px);
         grid-template-rows: repeat(5, 150px);
-
         grid-template-areas: "one two two"
             "one four five"
             "three six six"
             "three seven seven"
             "eight eight eight";
     }
-    
 
     .two div:nth-child(1) {
         width: 70% !important;
     }
-    
+
     .two .img {
         margin: 5px;
     }
@@ -396,7 +383,7 @@ body {
     }
 }
 
-@media screen and (max-width:520px) {
+@media screen and (max-width: 520px) {
     .container {
         grid-template-columns: repeat(1, 280px);
         grid-template-rows: 200px 150px 200px 320px 320px 140px 150px 300px;
@@ -473,22 +460,22 @@ body {
         align-items: flex-start;
         font-size: 24px;
         letter-spacing: -1px;
+    }
 
-        div:nth-child(1) {
-            width: 100%;
-        }
+    .six div:nth-child(1) {
+        width: 100%;
+    }
 
-        .img {
-            width: 200px;
-        }
+    .six .img {
+        width: 200px;
     }
 
     .container .seven {
         flex-flow: column nowrap;
+    }
 
-        div:nth-child(2) {
-            margin: 18px 0;
-        }
+    .seven div:nth-child(2) {
+        margin: 18px 0;
     }
 
     .five .img {
