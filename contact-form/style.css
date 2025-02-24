@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+    font-family: 'karla', sans-serif;
+    font-size: 16px;
+}
+
+
+input,
+textarea,
+.query-type div label {
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 6px;
+}
+
+input:active,
+input:focus,
+textarea:active,
+textarea:focus,
+button:active,
+button:focus {
+    border-color: hsl(169, 82%, 27%);
+    outline: none;
+}
+
+.error {
+    color: hsl(0, 66%, 54%);
+    font-size: 12px;
+    margin-top: 8px;
+    display: none;
+}
+
+body {
+    background-color: hsl(148, 38%, 91%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    width: 100%;
+}
+
+.container {
+    background-color: #fff;
+    width: 700px;
+    padding: 40px;
+    margin: 90px 0;
+    border-radius: 25px;
+    position: relative;
+}
+
+.success {
+    background-color: hsl(187, 24%, 22%);
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    display: none;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.success-hd {
+    display: flex !important;
+}
+
+.success img {
+    padding: 0 5px 0 0;
+}
+
+.success .success-text {
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+form input {
+    margin-top: 8px;
+    padding: 12px;
+}
+
+form h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+form .name {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.name input,
+.query-type label {
+    width: 300px !important;
+}
+
+form .query-type {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column nowrap;
+}
+
+.query-type label {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 12px;
+}
+
+.query-type input {
+    margin: 1px 5px;
+}
+
+input[type='radio'] {
+    accent-color: hsl(169, 70%, 34%);
+}
+
+.query-type div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+form .message textarea {
+    margin-top: 10px;
+    padding: 12px;
+}
+
+form div label {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+form .terms {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.terms label {
+    display: flex;
+    flex-flow: row nowrap !important;
+}
+
+form .terms input {
+    margin: 0 15px 0 0;
+}
+
+.terms input[type="checkbox"] {
+    accent-color: hsl(169, 70%, 34%);
+}
+
+form button {
+    background-color: hsl(169, 82%, 27%);
+    border: none;
+    color: #fff;
+    padding: 15px 0;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: hsl(187, 24%, 22%);
+}
+
+form button:active {
+    text-shadow: 0 0 2px #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 380px;
+    }
+
+    form>div,
+    form label {
+        margin-top: 5px;
+    }
+
+    form .name {
+        flex-flow: column nowrap;
+    }
+
+    .query-type input {
+        width: 12px;
+        margin: 1px 10px 1px 5px !important;
+    }
+
+    form .query-type div:nth-child(2) {
+        flex-flow: column nowrap;
+    }
+
+    .terms input {
+        width: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 320px;
+        padding: 30px;
+    }
+
+    .name input,
+    .email input,
+    .query-type label,
+    .message textarea {
+        width: 250px !important;
+    }
+}
