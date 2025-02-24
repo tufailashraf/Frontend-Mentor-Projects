@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+}
+
+body {
+    background-image: url('images/pattern-curve.svg');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 50% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    width: 100%;
+}
+
+.container {
+    width: 750px;
+    position: relative;
+    display: flex;
+    align-items: center;
+} 
+
+.container .box-a {
+    width: 66%;
+    font-size: 24px;
+    padding: 50px 0;
+}
+
+.box-a p {
+    line-height: 30px;
+    word-spacing: 5px;
+}
+
+.box-a .info {
+    font-weight: bold;
+    gap: 5px;
+    display: flex;
+    align-items: baseline;
+}
+
+.box-a .designation {
+    font-weight: normal;
+    font-size: 20px;
+    color: hsl(240, 18%, 77%);
+}
+
+.container .box-b {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    box-shadow: 0 0 5px #ccc;
+}
+
+.box-b .img {
+    width: 320px;
+    position: relative;
+    height: auto;
+}
+
+.box-b .img img {
+    width: 100%;
+    display: block;
+}
+
+.container .btn {
+    background-color: #fff;
+    box-shadow: 0 0 5px #ccc;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    position: absolute;
+    bottom: -15.5px;
+    right: 232px;
+    border-radius: 25px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.container .btn button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    line-height: 0;
+}
+
+.container .btn button:hover {
+    transform: scale(0.9);
+}
+
+.container .btn button:active img {
+    transform: scale(0.8);
+}
+
+.pattern-quote {
+    position: absolute;
+    top: 0;
+    left: 70px;
+    img {
+        width: 100%;
+    }
+}
+
+.bg-img {
+    position: absolute;
+    width: 420px;
+    height: 385px;
+    right: -52px;
+    bottom: -26px;
+    z-index: -2;
+}
+
+.bg-img img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 600px;
+    }
+
+    .container .box-a {
+        width: 62%;
+        font-size: 18px;
+        padding: 36.5px 0;
+    }
+
+    .box-a p {
+        word-spacing: 2px;
+    }
+
+    .box-a .info .designation {
+        font-size: 14px;
+    }
+
+    .box-b .img {
+        width: 280px;
+    }
+
+    .container .btn {
+        right: 208px;
+        bottom: -13.7px;
+        gap: 5px;
+    }
+
+    .container .btn button {
+        padding: 5px 8px;
+        transform: scale(0.95);
+    }
+
+    .pattern-quote {
+        width: 90px;
+    }
+
+    .bg-img {
+        width: 350px;
+        height: 335px;
+        right: -43px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-size: 70% 12%;
+    }
+    .container {
+        margin: 40px 0;
+        width: 340px;
+        flex-flow: column-reverse nowrap;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    .box-a {
+        width: 100% !important;
+    }
+
+    .box-a .info {
+        align-items: center;
+        justify-content: center;
+        flex-flow: column nowrap;
+    }
+
+    .box-a .designation {
+        font-size: 16px !important;
+    }
+
+    .box-b {
+        position: relative !important;
+    }
+
+    .box-b .img {
+        width: 250px;
+    }
+
+    .container .btn {
+        right: 50%;
+        transform: translateX(50%);
+        bottom: 319px;
+    }
+
+    .pattern-quote {
+        top: 280px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70px;
+    }
+
+    .bg-img {
+        width: 335px;
+        height: 303px;
+        right: 50%;
+        bottom: 310px;
+        transform: translateX(50%);
+    }
+}
