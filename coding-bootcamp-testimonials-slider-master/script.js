@@ -1,15 +1,15 @@
 const testimonials = [
     {
-      text: "“ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future. ”",
-      name: "Tanya Sinclair",
-      designation: "UX Engineer",
-      image: "images/image-tanya.jpg"
+        text: "“ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future. ”",
+        name: "Tanya Sinclair",
+        designation: "UX Engineer",
+        image: "images/image-tanya.jpg"
     },
     {
-      text: "“ If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ”",
-      name: "John Tarkpor",
-      designation: "Junior Front-end Developer",
-      image: "images/image-John.jpg"
+        text: "“ If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ”",
+        name: "John Tarkpor",
+        designation: "Junior Front-end Developer",
+        image: "images/image-John.jpg"
     }
 ];
 
@@ -37,12 +37,15 @@ function updateTestimonial(index) {
         textElement.textContent = testimonials[index].text;
         nameElement.textContent = testimonials[index].name;
         designationElement.textContent = testimonials[index].designation;
-        imageElement.src = testimonials[index].image;
 
-        textElement.style.opacity = 1;
-        nameElement.style.opacity = 1;
-        designationElement.style.opacity = 1;
-        imageElement.style.opacity = 1;
+        imageElement.onload = () => {
+            textElement.style.opacity = 1;
+            nameElement.style.opacity = 1;
+            designationElement.style.opacity = 1;
+            imageElement.style.opacity = 1;
+        };
+
+        imageElement.src = testimonials[index].image;
     }, 300);
 }
 
